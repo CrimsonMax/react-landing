@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+}
+
+body .container {
+  background-image: url("img/head-backgroung.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  height: 610px;
+  width: 100%;
+}
+
+body .container .bord {
+  height: 100%;
+  margin-top: 10px;
+}
+
+body .container .bord .bar {
+  height: 50px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: red;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+body .container .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body .container .wrapper h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+/*# sourceMappingURL=App.css.map */
