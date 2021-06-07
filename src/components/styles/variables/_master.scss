@@ -3,6 +3,7 @@ $prime-color: #F21F5B;
 $form-btn: #3951E7;
 $footer-color: #232473;
 $footer-bottom-color: #1A1B57;
+
 $xs-font: 12px;
 $s-font: 14px;
 $m-font: 16px;
@@ -10,10 +11,18 @@ $l-font: 18px;
 $xl-font: 32px;
 $xxl-font: 40px;
 $xxxl-font: 56px;
+
 $base-padding: 32px;
 
-@mixin default-flex {
+$justify-center: center;
+$justify-between: space-between;
+$justify-around: space-around;
+$flex-column: column;
+$al-it-center: center;
+
+@mixin default-flex($justify, $direction: row, $al-it: baseline) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $al-it;
+  flex-direction: $direction;
 }

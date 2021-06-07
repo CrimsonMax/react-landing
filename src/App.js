@@ -1,17 +1,10 @@
 import './App.scss';
+import { HeadSlider } from './components/HeadSlider';
 
 function App() {
   return (
     <>
-      <div className="container">
-        <div className="bord">
-          <div className="bar"></div>
-
-        </div>
-        <div className="wrapper">
-          <h1>Hello!</h1>
-        </div>
-      </div>
+      <HeadSlider />
     </>
   );
 }

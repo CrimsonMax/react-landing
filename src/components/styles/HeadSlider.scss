@@ -1,0 +1,111 @@
+@import "variables/master";
+
+.head-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/head-backgroung.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 610px;
+  width: 100%;
+
+  .top-header {
+    height: 40px;
+    width: 100%;
+    padding: 0 40px;
+    @include default-flex($justify: $justify-between);
+
+    .organisation-logo {
+      cursor: pointer;
+    }
+
+    .language-switch {
+      cursor: pointer;
+
+      .language-name {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .slider-header {
+    margin-top: 126px;
+  }
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  height: 442px;
+
+  .slider-prev,
+  .slider-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+      position: absolute;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .slider-prev {
+    
+    i {
+      left: -72px;
+    }
+  }
+
+  .slider-next {
+    
+    i {
+      right: -72px;
+    }
+  }
+
+  .slider-card {
+    @include default-flex($justify: $justify-center, $direction: $flex-column);
+
+    .slider-card-header {
+      h1 {
+        font-size: $xxxl-font;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+
+    .slider-card-content {
+
+      p {
+        font-size: $l-font;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 32px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .slider-button {
+
+      .btn {
+        background-color: $prime-color;
+        
+        p {
+          font-size: $m-font;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #5a051d;
+        }
+
+        &:active {
+          background-color: #1f010a;
+        }
+      }
+    }
+  }
+}
