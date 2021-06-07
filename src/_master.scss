@@ -1,0 +1,19 @@
+$prime-font: "Open Sans", sans-serif;
+$prime-color: #F21F5B;
+$form-btn: #3951E7;
+$footer-color: #232473;
+$footer-bottom-color: #1A1B57;
+$xs-font: 12px;
+$s-font: 14px;
+$m-font: 16px;
+$l-font: 18px;
+$xl-font: 32px;
+$xxl-font: 40px;
+$xxxl-font: 56px;
+$base-padding: 32px;
+
+@mixin default-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
