@@ -1,0 +1,131 @@
+.footer-container {
+  height: 240px;
+  width: 100%;
+  background-color: #232473;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 32px;
+}
+
+.footer-container .footer-content .logo-content, .footer-container .footer-content .adress-content {
+  width: 280px;
+  color: darkgray;
+}
+
+.footer-container .footer-content .logo-content, .footer-container .footer-content .pages-content, .footer-container .footer-content .adress-content, .footer-container .footer-content .href-content {
+  height: 184px;
+}
+
+.footer-container .footer-content .logo-content .logo-info {
+  padding-top: 24px;
+}
+
+.footer-container .footer-content .pages-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 384px;
+}
+
+.footer-container .footer-content .pages-content .href-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-content .pages-content .href-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container .footer-content .pages-content .href-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-content .socials .socials-head {
+  margin-top: 24px;
+  color: white;
+}
+
+.footer-container .footer-content .socials .socials-icons i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #3951E7;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 8px 8px 0 0;
+}
+
+.footer-container .footer-content .socials .socials-icons i:hover {
+  background-color: #0f1f80;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+/*# sourceMappingURL=Footer.css.map */

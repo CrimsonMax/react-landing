@@ -7,8 +7,11 @@
 }
 
 body {
-  height: 1000px;
   font-family: $prime-font;
+
+  a {
+    text-decoration: none;
+  }
   
   .btn {
     height: 48px;
@@ -18,6 +21,14 @@ body {
 
     .btn-content {
       margin: 8px 24px;
+    }
+
+    &:hover {
+      transition: all .2s ease-in;
+    }
+
+    &:active {
+      transition: all .2s ease-in;
     }
 
   }
@@ -46,7 +57,7 @@ body {
     // }
     // }
     .wrapper {
-      width: 800px;
+      width: 1000px;
       margin: 0 auto;
     }
 }

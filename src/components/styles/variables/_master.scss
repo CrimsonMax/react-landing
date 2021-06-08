@@ -14,14 +14,17 @@ $xxxl-font: 56px;
 
 $base-padding: 32px;
 
-$justify-center: center;
+$flex-inline: inline-flex;
 $justify-between: space-between;
 $justify-around: space-around;
-$flex-column: column;
-$al-it-center: center;
+$direction-column: column;
+$al-it-baseline: baseline;
 
-@mixin default-flex($justify, $direction: row, $al-it: baseline) {
-  display: flex;
+$s-line-height: 24px;
+$m-line-height: 32px;
+
+@mixin default-flex($flex-type: flex, $justify: center, $direction: row, $al-it: center) {
+  display: $flex-type;
   justify-content: $justify;
   align-items: $al-it;
   flex-direction: $direction;

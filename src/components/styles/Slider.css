@@ -1,55 +1,10 @@
-.head-container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("img/head-backgroung.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/head-backgroung.png");
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 610px;
-  width: 100%;
-}
-
-.head-container .top-header {
-  height: 40px;
-  width: 100%;
-  padding: 0 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.head-container .top-header .organisation-logo {
-  cursor: pointer;
-}
-
-.head-container .top-header .language-switch {
-  cursor: pointer;
-}
-
-.head-container .top-header .language-switch .language-name {
-  margin-right: 8px;
-}
-
-.head-container .slider-header {
-  margin-top: 126px;
-}
-
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 442px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .slider .slider-prev,
@@ -72,6 +27,20 @@
   font-size: 40px;
   color: #fff;
   cursor: pointer;
+}
+
+.slider .slider-prev i:hover,
+.slider .slider-next i:hover {
+  color: grey;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.slider .slider-prev i:active,
+.slider .slider-next i:active {
+  color: darkgray;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .slider .slider-prev i {
@@ -105,20 +74,24 @@
 }
 
 .slider .slider-card .slider-card-content p {
+  width: 700px;
   font-size: 18px;
   color: #fff;
   font-weight: 600;
   margin-top: 32px;
   margin-bottom: 24px;
+  line-height: 32px;
 }
 
 .slider .slider-card .slider-button .btn {
   background-color: #F21F5B;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
 }
 
 .slider .slider-card .slider-button .btn p {
   font-size: 16px;
-  color: #fff;
+  color: whitesmoke;
 }
 
 .slider .slider-card .slider-button .btn:hover {
@@ -128,4 +101,4 @@
 .slider .slider-card .slider-button .btn:active {
   background-color: #1f010a;
 }
-/*# sourceMappingURL=HeadSlider.css.map */
+/*# sourceMappingURL=Slider.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EAChB,KAAK,EAAE,IAAI;EACX,gBAAgB,ECAI,OAAO;CDU5B;;AAZD,AAIE,iBAJe,CAIf,YAAY,CAAC;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,ECRF,WAAW,EAAE,UAAU;EDShC,WAAW,EAAE,GAAG;EAChB,SAAS,ECHJ,IAAI;EDIT,KAAK,EAAE,QAAQ;ECejB,OAAO,EADuB,IAAI;EAElC,eAAe,EAVC,aAAa;EAW7B,WAAW,EAHoE,MAAM;EAIrF,cAAc,EAJoD,GAAG;CDZpE",
+    "sources": [
+        "FooterBottom.scss",
+        "variables/_master.scss"
+    ],
+    "names": [],
+    "file": "FooterBottom.css"
+}

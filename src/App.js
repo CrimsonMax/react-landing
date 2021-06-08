@@ -1,10 +1,12 @@
 import './App.scss';
-import { HeadSlider } from './components/HeadSlider';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <>
-      <HeadSlider />
+      <Header />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,80 @@
+@import 'variables/master';
+
+.footer-container {
+  height: 240px;
+  width: 100%;
+  background-color: $footer-color;
+  font-family: $prime-font;
+  font-weight: 400;
+  font-size: $s-font;
+  color: white;
+  line-height: $s-line-height;
+  @include default-flex($al-it: $al-it-baseline);
+
+  .footer-content {
+    @include default-flex($justify: $justify-between);
+    padding-top: $base-padding;
+
+    .logo-content, .adress-content {
+      width: 280px;
+      color: darkgray;
+    }
+
+    .logo-content, .pages-content, .adress-content, .href-content {
+      height: 184px;
+    }
+
+    .logo-content {
+
+      
+      .logo-info {
+        padding-top: 24px;
+      }
+    }
+
+    .pages-content {
+      @include default-flex($justify: $justify-between);
+      width: 384px;
+
+      .href-content {
+        @include default-flex($justify: $justify-between, $direction: $direction-column, $al-it: $al-it-baseline);
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .socials {
+
+      .socials-head {
+        margin-top: 24px;
+        color: white;
+      }
+
+      .socials-icons {
+
+        i {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background-color: $form-btn;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          @include default-flex($flex-type: $flex-inline);
+          margin: 8px 8px 0 0;
+
+          &:hover {
+            background-color: #0f1f80;
+            transition: all .2s ease-in;
+          }
+        }
+      }
+    }
+  }
+}

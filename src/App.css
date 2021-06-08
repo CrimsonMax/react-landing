@@ -6,8 +6,11 @@
 }
 
 body {
-  height: 1000px;
   font-family: "Open Sans", sans-serif;
+}
+
+body a {
+  text-decoration: none;
 }
 
 body .btn {
@@ -21,8 +24,18 @@ body .btn .btn-content {
   margin: 8px 24px;
 }
 
+body .btn:hover {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+body .btn:active {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
 body .wrapper {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 /*# sourceMappingURL=App.css.map */

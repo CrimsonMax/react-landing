@@ -1,0 +1,15 @@
+@import "variables/master";
+
+.bottom-container {
+  width: 100%;
+  background-color: $footer-bottom-color;
+
+  .bottom-text {
+    height: 40px;
+    font-family: $prime-font;
+    font-weight: 400;
+    font-size: $s-font;
+    color: darkgray;
+    @include default-flex($justify: $justify-between);
+  }
+}
