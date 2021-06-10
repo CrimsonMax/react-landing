@@ -17,15 +17,18 @@ $base-padding: 32px;
 $flex-inline: inline-flex;
 $justify-between: space-between;
 $justify-around: space-around;
+$justify-start: flex-start;
 $direction-column: column;
 $al-it-baseline: baseline;
+$wrap-wrap: wrap;
 
 $s-line-height: 24px;
 $m-line-height: 32px;
 
-@mixin default-flex($flex-type: flex, $justify: center, $direction: row, $al-it: center) {
+@mixin default-flex($flex-type: flex, $justify: center, $direction: row, $al-it: center, $wrap: nowrap) {
   display: $flex-type;
   justify-content: $justify;
   align-items: $al-it;
   flex-direction: $direction;
+  flex-wrap: $wrap;
 }

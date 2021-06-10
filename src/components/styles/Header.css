@@ -26,6 +26,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .head-container .top-header .organisation-logo {
@@ -38,6 +40,7 @@
 
 .head-container .top-header .language-switch .language-name {
   margin-right: 8px;
+  color: white;
 }
 
 .head-container .slider-header {

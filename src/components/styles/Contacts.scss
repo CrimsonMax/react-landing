@@ -1,0 +1,70 @@
+@import "variables/master";
+
+.contacts-container {
+  background-image: url("img/map-img.png");
+  height: 456px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .card-container {
+    @include default-flex($justify: $justify-start);
+    height: 100%;
+
+    .contact-card {
+      width: 488px;
+      height: 296px;
+      background: #ffffff;
+      border-radius: 8px;
+      font-family: $prime-font;
+      color: black;
+      font-weight: 400;
+      font-size: $m-font;
+
+      .card-content {
+        @include default-flex($direction: $direction-column, $al-it: $al-it-baseline);
+        padding: 40px 70px;
+
+        .content-header {
+          font-weight: 700;
+          font-size: $xxl-font;
+          line-height: 40px;
+        }
+
+        .content-adress {
+          margin: 16px 0 12px 0;
+        }
+
+        .content-phone {
+          a {
+            color: blue;
+          }
+        }
+
+        .btn {
+          margin-top: 33px;
+          background-color: $prime-color;
+          color: white;
+
+          &:hover {
+            background-color: #5a051d;
+          }
+
+          &:active {
+            background-color: #1f010a;
+          }
+
+          .btn-content {
+            margin: 9px 24px;
+            display: flex;
+
+            i {
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
