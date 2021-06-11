@@ -1,16 +1,22 @@
-@import 'variables/master';
+@import "variables/master";
 
 .slider {
   display: flex;
-  position: relative;
   height: 442px;
   text-shadow: 1px 1px 1px black;
 
   .slider-prev,
   .slider-next {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include default-flex($direction: $direction-column);
+    position: relative;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      display: none;
+    }
+
+    @media (max-width: 479px) {
+      display: none;
+    }
 
     i {
       position: absolute;
@@ -44,24 +50,47 @@
 
   .slider-card {
     @include default-flex($direction: $direction-column, $al-it: $al-it-baseline);
+    width: 100%;
+
+    @media (max-width: 479px) {
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+    }
 
     .slider-card-header {
       h1 {
         font-size: $xxxl-font;
         color: #fff;
         font-weight: bold;
+
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: $xl-font;
+        }
+
+        @media (max-width: 479px) {
+          font-size: $xl-font;
+        }
       }
     }
 
     .slider-card-content {
       p {
-        width: 700px;
+        max-width: 700px;
         font-size: $l-font;
         color: #fff;
         font-weight: 600;
         margin-top: 32px;
         margin-bottom: 24px;
         line-height: $m-line-height;
+
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: $m-font;
+        }
+
+        @media (max-width: 479px) {
+          font-size: $m-font;
+        }
       }
     }
 

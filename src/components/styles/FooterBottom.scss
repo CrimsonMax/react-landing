@@ -11,5 +11,16 @@
     font-size: $s-font;
     color: darkgray;
     @include default-flex($justify: $justify-between);
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: $xs-font;
+    }
+
+    @media (max-width: 479px) {
+      font-size: $xs-font;
+      padding: 10px;
+      height: 100px;
+      text-align: center;
+    }
   }
 }

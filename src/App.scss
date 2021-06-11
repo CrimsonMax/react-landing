@@ -58,8 +58,33 @@ body {
     // }
     // }
     .wrapper {
-      width: 1000px;
+      width: 1200px;
       margin: 0 auto;
       height: 100%;
+
+      @media (min-width: 1024px) and(max-width: 1200px) {
+        width: 800px;
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 600px;
+      }
+
+      @media (min-width: 480px) and (max-width: 767px) {
+        width: 400px;
+      }
+
+      @media (max-width: 479px) {
+        width: 100%;
+      }
+
+      // @media (min-width: 320px) and (max-width: 479px) {
+      //   width: 100%;
+      // }
+
+      // @media (max-width: 319px) {
+      //   width: 100%;
+      // }
     }
 }
+

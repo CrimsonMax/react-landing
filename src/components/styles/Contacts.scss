@@ -6,11 +6,19 @@
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   .card-container {
     @include default-flex($justify: $justify-start);
     height: 100%;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 479px) {
+      justify-content: center;
+    }
 
     .contact-card {
       width: 488px;
@@ -22,14 +30,37 @@
       font-weight: 400;
       font-size: $m-font;
 
+      @media (min-width: 480px) and (max-width: 767px) {
+        width: 388px;
+      }
+
+      @media (max-width: 479px) {
+        width: 288px;
+        font-size: $xs-font;
+      }
+      
       .card-content {
         @include default-flex($direction: $direction-column, $al-it: $al-it-baseline);
         padding: 40px 70px;
+
+        @media (min-width: 480px) and (max-width: 767px) {
+          padding: 20px 35px;
+        }
+
+        @media (max-width: 479px) {
+          height: 100%;
+          align-items: center;
+          padding: 20px 35px;
+        }
 
         .content-header {
           font-weight: 700;
           font-size: $xxl-font;
           line-height: 40px;
+
+          @media (max-width: 479px) {
+            font-size: $xl-font;
+          }
         }
 
         .content-adress {

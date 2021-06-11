@@ -36,8 +36,32 @@ body .btn:active {
 }
 
 body .wrapper {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   height: 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body .wrapper {
+    width: 800px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body .wrapper {
+    width: 600px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body .wrapper {
+    width: 400px;
+  }
+}
+
+@media (max-width: 479px) {
+  body .wrapper {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

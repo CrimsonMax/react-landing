@@ -1,0 +1,145 @@
+.form-container {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+          box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+  width: 100%;
+  min-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-container .form {
+  padding: 80px;
+}
+
+.form-container .form h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  color: black;
+}
+
+.form-container .form span {
+  margin: 0 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #2c2738;
+}
+
+.form-container .form a {
+  color: #0880ae;
+  text-decoration: none;
+}
+
+.form-container .form .form-control {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.form-container .form .form-control .star {
+  color: red;
+}
+
+.form-container .form .form-control .approving {
+  font-size: 14px;
+}
+
+.form-container .form .form-control .header {
+  margin-bottom: 40px;
+}
+
+.form-container .form .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+}
+
+.form-container .form .form-control input,
+.form-container .form .form-control textarea {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #d4d6d7;
+  border-radius: 2px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c3c4;
+}
+
+.form-container .form .form-control textarea {
+  resize: none;
+}
+
+.form-container .form .form-control input:focus,
+.form-container .form .form-control textarea:focus,
+.form-container .form .form-control select:focus {
+  border: 2px solid #0880ae;
+  outline: none;
+  color: #2c2738;
+}
+
+.form-container .form .form-control small {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-container .form .form-control.error small {
+  visibility: visible;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ff7171;
+}
+
+.form-container .form .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-container .form .btn-container .btn {
+  margin-top: 32px;
+  background-color: #3951E7;
+  color: white;
+}
+
+.form-container .form .btn-container .btn:hover {
+  background-color: #0f1f80;
+}
+
+.form-container .form .btn-container .btn:active {
+  background-color: #070f40;
+}
+
+.form-container .form .btn-container .btn:disabled {
+  background: #dbe2ea;
+}
+
+.form-container .form .btn-container .btn .btn-content {
+  margin: 9px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container .form .btn-container .btn .btn-content i {
+  margin-right: 12px;
+}
+/*# sourceMappingURL=Form.css.map */

@@ -1,0 +1,137 @@
+@import "variables/master";
+
+.form-container {
+  font-family: $prime-font;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+  width: 100%;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .form {
+    padding: 80px;
+
+    h1 {
+      font-weight: 700;
+      text-align: center;
+      font-size: $xl-font;
+      line-height: 38px;
+      color: black;
+    }
+
+    span {
+      margin: 0 4px;
+      font-weight: 400;
+      font-size: $xs-font;
+      color: #2c2738;
+    }
+
+    a {
+      color: #0880ae;
+      text-decoration: none;
+    }
+
+    .form-control {
+      margin-bottom: 24px;
+      position: relative;
+
+      .star {
+        color: red;
+      }
+
+      .approving {
+        font-size: $s-font;
+      }
+
+      .header {
+        margin-bottom: 40px;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: $s-font;
+        line-height: 24px;
+        color: black;
+      }
+
+      input,
+      textarea {
+        font-family: $prime-font;
+        border: 1px solid #d4d6d7;
+        border-radius: 2px;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        font-weight: 400;
+        font-size: $s-font;
+        color: #c1c3c4;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      input,
+      textarea,
+      select {
+        &:focus {
+          border: 2px solid #0880ae;
+          outline: none;
+          color: #2c2738;
+        }
+      }
+
+      small {
+        position: absolute;
+        left: 0;
+        visibility: hidden;
+      }
+
+      &.error {
+        small {
+          visibility: visible;
+          font-weight: 400;
+          font-size: $xs-font;
+          color: #ff7171;
+        }
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+
+      .btn {
+        margin-top: 32px;
+        background-color: $form-btn;
+        color: white;
+
+        &:hover {
+          background-color: #0f1f80;
+        }
+
+        &:active {
+          background-color: #070f40;
+        }
+
+        &:disabled {
+          background: #dbe2ea;
+        }
+
+        .btn-content {
+          margin: 9px 24px;
+          display: flex;
+
+          i {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

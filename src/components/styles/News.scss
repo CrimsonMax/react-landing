@@ -5,17 +5,34 @@
   margin: 80px 0px;
   font-family: $prime-font;
 
+  @media (max-width: 479px) {
+    padding: 10px;
+  }
+
   .news-header {
     font-weight: 700;
     font-size: $xxl-font;
     color: black;
     line-height: 40px;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: $xl-font;
+    }
+
+    @media (max-width: 479px) {
+      font-size: $l-font;
+      text-align: center;
+    }
   }
 
   .news-card-container {
     font-weight: 600;
     font-size: $m-font;
     @include default-flex($justify: $justify-between, $wrap: $wrap-wrap);
+
+    @media (max-width: 479px) {
+      justify-content: center;
+    }
 
     .news-card {
       width: 384px;
@@ -25,6 +42,29 @@
       border-radius: 16px;
       overflow: hidden;
       margin-top: 40px;
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 284px;
+        height: 348px;
+      }
+
+      @media (min-width: 480px) and (max-width: 767px) {
+        width: 184px;
+        height: 248px;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 479px) {
+        width: 248px;
+        height: 348px;
+      }
+
+      &:hover {
+        .card-img {
+          transform: scale(1.1);
+          transition: all 0.2s;
+        }
+      }
 
       .card-img {
         height: 50%;
@@ -40,15 +80,36 @@
       .card-info {
         padding: 32px;
 
+        @media (min-width: 768px) and (max-width: 1023px) {
+          padding: 16px;
+        }
+
+        @media (min-width: 480px) and (max-width: 767px) {
+          padding: 4px;
+        }
+
+        @media (max-width: 479px) {
+          padding: 16px;
+        }
+
         .card-header {
           @include default-flex($justify: $justify-between);
           margin-bottom: 16px;
           color: #6a6a6a;
           font-size: $xs-font;
 
+          @media (min-width: 480px) and (max-width: 767px) {
+            margin-bottom: 4px;
+          }
+
           a {
+
             i {
               margin-right: 8px;
+
+              @media (min-width: 480px) and (max-width: 767px) {
+                margin-right: 4px;
+              }
             }
           }
         }
@@ -56,6 +117,15 @@
         .card-text {
           font-size: $m-font;
           line-height: 24px;
+
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: $xs-font;
+            padding: 0px 8px;
+          }
+
+          @media (max-width: 479px) {
+            font-size: $xs-font;
+          }
 
           .card-text__preview {
             height: 126px;
