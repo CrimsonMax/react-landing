@@ -11,18 +11,18 @@ export const Slider = () => {
         <div className="slider-card-header">
           <h1>
             Началась подача документов
-                </h1>
+          </h1>
         </div>
         <div className="slider-card-content">
           <p>
             Программа предполагает углубленное изучение вопросов, связанных с проектированием, исследованием, производством и эксплуатацией мехатронных и робототехнических систем и комплексов.
-                </p>
+          </p>
         </div>
         <div className="slider-button">
           <button className="btn">
             <p className="btn-content">
               Подробнее
-                  </p>
+            </p>
           </button>
         </div>
       </div>

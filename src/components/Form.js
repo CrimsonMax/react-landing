@@ -2,7 +2,10 @@ import './styles/Form.scss'
 import { useEffect, useRef, useState } from 'react';
 import { checkName, checkEmail, checkText } from '../util/FormControl'
 
-export const Form = () => {
+export const Form = ({ exist }) => {
+
+  /* --V----Стейт контента----V-- */
+  const [content, setContent] = useState(false)
 
   /* --V----Стейт формы----V-- */
   const [form, setForm] = useState({
@@ -18,8 +21,20 @@ export const Form = () => {
       firstRender.current = false
     } else {
       ok()
-    } // eslint-disable-next-line
+    }
+    // eslint-disable-next-line
   }, [form])
+
+  useEffect(() => {
+    setForm({
+      ...form,
+      name: '',
+      email: '',
+      text: ''
+    })
+    setContent(false)
+    // eslint-disable-next-line
+  }, [exist])
 
   /* --V----Валидация----V-- */
   function ok() {
@@ -57,45 +72,58 @@ export const Form = () => {
     setForm(form => form = { ...form, email: field.value })
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setContent(true)
+  }
+
   return (
-    <div className="form-container">
-      <form autoComplete="off" action="" id="form" className="form">
-        <div className="form-control">
-          <div className="header">
-            <h1>Напишите нам!</h1>
-          </div>
+    <>
+      {content ?
+        <div className="confirm">
+          <h1>Спасибо за обратную связь!</h1>
         </div>
-        <div className="form-control">
-          <label htmlFor="username">Ваши фамилия и имя<sup className="star">*</sup></label>
-          <input type="text" id="username" onInput={checkName} defaultValue={form.name} onChange={handlerName} placeholder="Введите Ваше Имя" />
-          <small></small>
-        </div>
-        <div className="form-control">
-          <label htmlFor="email">Электронная почта<sup className="star">*</sup></label>
-          <input type="email" id="email" onInput={checkEmail} defaultValue={form.email} onChange={handlerEmail} placeholder="Введите Ваш Email" />
-          <small></small>
-        </div>
-        <div className="form-control">
-          <label htmlFor="text">Что непонятно или нужно уточнить<sup className="star">*</sup></label>
-          <textarea maxLength="300" id="text" onInput={checkText} defaultValue={form.text} onChange={handlerText} placeholder="Введите Text" />
-          <small></small>
-        </div>
-        <div className="form-control">
-          <div className="approving">
-            <span>
-              Отправляя данную форму, вы даете согласие на обработку своих <a href="https://www.bing.com/">Персональных данных</a>
-            </span>
-          </div>
-        </div>
-        <div className="btn-container">
-          <button className="btn" id="btn" type='submit' disabled>
-            <div className="btn-content">
-              <i className="far fa-envelope"></i>
-              <p>Отправить</p>
+        :
+        <div className="form-container">
+          <form onSubmit={handleSubmit} autoComplete="off" action="" id="form" className="form">
+            <div className="form-control">
+              <div className="header">
+                <h1>Напишите нам!</h1>
+              </div>
             </div>
-          </button>
+            <div className="form-control">
+              <label htmlFor="username">Ваши фамилия и имя<sup className="star">*</sup></label>
+              <input type="text" id="username" onInput={checkName} defaultValue={form.name} onChange={handlerName} placeholder="Введите Ваше Имя" />
+              <small></small>
+            </div>
+            <div className="form-control">
+              <label htmlFor="email">Электронная почта<sup className="star">*</sup></label>
+              <input type="email" id="email" onInput={checkEmail} defaultValue={form.email} onChange={handlerEmail} placeholder="Введите Ваш Email" />
+              <small></small>
+            </div>
+            <div className="form-control">
+              <label htmlFor="text">Что непонятно или нужно уточнить<sup className="star">*</sup></label>
+              <textarea maxLength="300" id="text" onInput={checkText} defaultValue={form.text} onChange={handlerText} placeholder="Введите Text" />
+              <small></small>
+            </div>
+            <div className="form-control">
+              <div className="approving">
+                <span>
+                  Отправляя данную форму, вы даете согласие на обработку своих <a href="https://www.bing.com/">Персональных данных</a>
+                </span>
+              </div>
+            </div>
+            <div className="btn-container">
+              <button className="btn" id="btn" type='submit' disabled>
+                <div className="btn-content">
+                  <i className="far fa-envelope"></i>
+                  <p>Отправить</p>
+                </div>
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
+      }
+    </>
   )
 }

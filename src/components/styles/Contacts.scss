@@ -7,8 +7,9 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 80px;
 
-  .card-container {
+  .carde-container {
     @include default-flex($justify: $justify-start);
     height: 100%;
 
@@ -20,7 +21,7 @@
       justify-content: center;
     }
 
-    .contact-card {
+    .contact-carde {
       width: 488px;
       height: 296px;
       background: #ffffff;
@@ -39,7 +40,7 @@
         font-size: $xs-font;
       }
       
-      .card-content {
+      .carde-content {
         @include default-flex($direction: $direction-column, $al-it: $al-it-baseline);
         padding: 40px 70px;
 

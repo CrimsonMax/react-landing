@@ -5,9 +5,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 80px;
 }
 
-.contacts-container .card-container {
+.contacts-container .carde-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +28,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .contacts-container .card-container {
+  .contacts-container .carde-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -35,14 +36,14 @@
 }
 
 @media (max-width: 479px) {
-  .contacts-container .card-container {
+  .contacts-container .carde-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.contacts-container .card-container .contact-card {
+.contacts-container .carde-container .contact-carde {
   width: 488px;
   height: 296px;
   background: #ffffff;
@@ -54,19 +55,19 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .contacts-container .card-container .contact-card {
+  .contacts-container .carde-container .contact-carde {
     width: 388px;
   }
 }
 
 @media (max-width: 479px) {
-  .contacts-container .card-container .contact-card {
+  .contacts-container .carde-container .contact-carde {
     width: 288px;
     font-size: 12px;
   }
 }
 
-.contacts-container .card-container .contact-card .card-content {
+.contacts-container .carde-container .contact-carde .carde-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,13 +87,13 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .contacts-container .card-container .contact-card .card-content {
+  .contacts-container .carde-container .contact-carde .carde-content {
     padding: 20px 35px;
   }
 }
 
 @media (max-width: 479px) {
-  .contacts-container .card-container .contact-card .card-content {
+  .contacts-container .carde-container .contact-carde .carde-content {
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -101,48 +102,48 @@
   }
 }
 
-.contacts-container .card-container .contact-card .card-content .content-header {
+.contacts-container .carde-container .contact-carde .carde-content .content-header {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
 }
 
 @media (max-width: 479px) {
-  .contacts-container .card-container .contact-card .card-content .content-header {
+  .contacts-container .carde-container .contact-carde .carde-content .content-header {
     font-size: 32px;
   }
 }
 
-.contacts-container .card-container .contact-card .card-content .content-adress {
+.contacts-container .carde-container .contact-carde .carde-content .content-adress {
   margin: 16px 0 12px 0;
 }
 
-.contacts-container .card-container .contact-card .card-content .content-phone a {
+.contacts-container .carde-container .contact-carde .carde-content .content-phone a {
   color: blue;
 }
 
-.contacts-container .card-container .contact-card .card-content .btn {
+.contacts-container .carde-container .contact-carde .carde-content .btn {
   margin-top: 33px;
   background-color: #F21F5B;
   color: white;
 }
 
-.contacts-container .card-container .contact-card .card-content .btn:hover {
+.contacts-container .carde-container .contact-carde .carde-content .btn:hover {
   background-color: #5a051d;
 }
 
-.contacts-container .card-container .contact-card .card-content .btn:active {
+.contacts-container .carde-container .contact-carde .carde-content .btn:active {
   background-color: #1f010a;
 }
 
-.contacts-container .card-container .contact-card .card-content .btn .btn-content {
+.contacts-container .carde-container .contact-carde .carde-content .btn .btn-content {
   margin: 9px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacts-container .card-container .contact-card .card-content .btn .btn-content i {
+.contacts-container .carde-container .contact-carde .carde-content .btn .btn-content i {
   margin-right: 12px;
 }
 /*# sourceMappingURL=Contacts.css.map */

@@ -41,6 +41,12 @@ body .wrapper {
   height: 100%;
 }
 
+@media (min-width: 1201px) and (max-width: 1300px) {
+  body .wrapper {
+    width: 1000px;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   body .wrapper {
     width: 800px;

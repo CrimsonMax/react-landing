@@ -1,5 +1,18 @@
 @import "variables/master";
 
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include default-flex();
+  height: 100%;
+  font-family: $prime-font;
+  font-size: $xl-font;
+  font-weight: 700;
+  text-align: center;
+  color: $footer-color;
+}
+
 .form-container {
   font-family: $prime-font;
   background: #fff;

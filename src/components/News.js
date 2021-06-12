@@ -53,26 +53,26 @@ export const News = () => {
         <div className="news-header">
           <h3>Новости и события</h3>
         </div>
-        <div className="news-card-container">
+        <div className="news-carde-container">
 
           {newsArr.map(elem => (
 
-            <div key={elem.id} className="news-card">
+            <div key={elem.id} className="news-carde">
 
-              <div className="card-img">
+              <div className="carde-img">
                 <img src={elem.img} alt="img" />
               </div>
-              <div className="card-info">
+              <div className="carde-info">
 
-                <div className="card-header">
-                  <p className="card-header__data">{elem.date}</p>
-                  <a href="/" className="card-header__source">
+                <div className="carde-header">
+                  <p className="carde-header__data">{elem.date}</p>
+                  <a href="/" className="carde-header__source">
                     <i className="fab fa-vk"></i>
                     <span>Вконтакте</span>
                   </a>
                 </div>
-                <div className="card-text">
-                  <a href="/" className="card-text__preview">{elem.text}</a>
+                <div className="carde-text">
+                  <a href="/" className="carde-text__preview">{elem.text}</a>
                 </div>
 
               </div>
