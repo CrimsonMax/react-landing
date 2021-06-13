@@ -6,7 +6,6 @@ import cardPic3 from './styles/img/card-img3.jpg'
 export const News = () => {
 
   /* --V----Типа наш бэкенд----V-- */
-
   const newsArr = [
     {
       id: 1,
