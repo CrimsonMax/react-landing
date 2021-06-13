@@ -1,10 +1,7 @@
 import { useState } from 'react'
-import { useRef } from 'react'
 import './styles/Slider.scss'
 
 export const Slider = () => {
-
-  const slider = useRef(null)
 
   /* --V----Контент слайдера----V-- */
   const [sliderItem, setSliderItem] = useState([
@@ -83,7 +80,7 @@ export const Slider = () => {
       <div className="slider-prev" onClick={() => prevHandler()}>
         <i className="far fa-arrow-alt-circle-left"></i>
       </div>
-      <div className="slider-card-container" ref={slider}>
+      <div className="slider-card-container">
         {sliderItem.map(elem => (
           // В инлайн-стилях определяем показ только активированного элемента
           <div key={elem.id} style={elem.active ? { opacity: '1' } : { opacity: '0' }} className="slider-card">

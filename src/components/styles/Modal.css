@@ -28,6 +28,7 @@
 }
 
 .modal-window.active {
+  height: 100%;
   opacity: 1;
   pointer-events: all;
 }
@@ -51,7 +52,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .modal__content {
     height: 100vh;
   }
