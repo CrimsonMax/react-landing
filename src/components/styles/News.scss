@@ -30,6 +30,10 @@
     font-size: $m-font;
     @include default-flex($justify: $justify-between, $wrap: $wrap-wrap);
 
+    @media (min-width: 1201px) and(max-width: 1300px) {
+      justify-content: space-around;
+    }
+
     @media (max-width: 479px) {
       justify-content: center;
     }
