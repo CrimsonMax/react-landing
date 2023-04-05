@@ -42,7 +42,8 @@
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
   width: 550px;
-  height: 700px;
+  height: 100%;
+  scale: 0.8;
 }
 
 .modal__content .cross {
